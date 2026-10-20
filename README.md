@@ -42,11 +42,13 @@ All commitment hashes use legacy Keccak-256, consistent with Ethereum's `keccak2
 
 The construction uses explicit domain separation:
 
+
 | Node Type | Hash Definition |
 |---|---|
-| Present leaf | `Keccak256(0x00 || key || value)` |
-| Internal node | `Keccak256(0x01 || left || right)` |
+| Present leaf | `Keccak256(0x00 \|\| key \|\| value)` |
+| Internal node | `Keccak256(0x01 \|\| left \|\| right)` |
 | Empty leaf | `Keccak256(0x02)` |
+
 
 Keys, values, and node hashes are represented as 32-byte values.
 
