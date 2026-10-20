@@ -1,0 +1,11 @@
+.env
+.env.*
+!.env.example
+
+out/
+cache/
+broadcast/
+
+*.log
+coverage/
+coverage.out
